@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap'); /*Обнуление*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body, #root {
+    background-color: #F5F6F7;
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    font-family: 'Roboto', serif;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+    margin: initial;
+    padding: initial;
+    background: initial;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+input {
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background: #F5F6F7;
+    border-radius: 8px;
+    border: 1px #0000004D solid;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+/*--------------------*/
+
+.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 1 auto;
+
+}
+
+.kod {
+    max-width: 100vw;
+    height: 100vh;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5F6F7;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: white;
+    height: 70px;
+    width: 100%;
+    background: #111F26;
+}
+
+.qwerty {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 1.438rem 0 0 5rem;
+}
+
+.login {
+    align-content: center;
+    padding-right: 5rem;
+}
+
+.login_button {
+    color: white;
+}
+
+.login_button:hover {
+    color: #c1c1c1;
+}
+
+.account_header_box {
+    display: flex;
+}
+
+.account_header_box span {
+    align-content: center;
+}
+
+.account_header_box img {
+    margin-left: 0.875rem;
+    max-width: 3.434rem;
+    max-height: 3.434rem;
+    border-radius: 8px;
+}
+
+.Zaiav {
+
+}
+
+.green-line {
+    display: flex;
+    padding: 11px;
+    width: 100%;
+    gap: .25rem;
+    background: #0C4533;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+}
+
+.main {
+    margin: 1.25rem 0 0 7rem;
+    height: calc(100vh - 260px);
+    overflow: auto;
+}
+
+.applications {
+    display: flex;
+    align-items: center;
+}
+
+.applications_logo {
+    margin: 0 0.125rem 0 0;
+}
+
+.applications_logo svg {
+    transition: transform 0.3s ease;
+}
+
+.palka {
+    border: none;
+    width: 100%;
+    height: 1rem;
+    color: black;
+    /*color: rgba(0, 0, 0, 0.6);*/
+}
+
+.okna {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.window {
+    border-radius: 8px;
+    background: #FFFFFF;
+    width: 20rem;
+    height: 10.714rem;
+    margin: 0 2rem 1.875rem 0;
+}
+
+.window_add_new {
+    border: 1px dashed rgba(0, 0, 0, 0.26);
+}
+
+.window_text {
+    margin: 1.25rem 0 0 0.625rem;
+    font-size: 1rem;
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+}
+
+.windows_title {
+
+}
+
+.windows_subtitle {
+    font-size: 10px;
+    margin-top: 0.625rem;
+}
+
+.windows_body {
+    font-size: 10px;
+    margin-top: 0.625rem;
+    max-width: 17rem;
+}
+
+.process_block {
+    font-size: 11px;
+    display: flex;
+    margin-top: 1.5rem;
+    align-content: center;
+    align-items: center;
+}
+
+.process_icon {
+    margin-right: 0.5rem;
+}
+
+.bottom {
+    height: 13.813rem;
+    width: 100%;
+    margin-top: 5.875rem;
+    background: #111F26;
+}
+
+.koddos {
+    font-weight: 500;
+
+}
+
+.podtv {
+    padding: 16px 0;
+    width: 100%;
+    background: #0C4533;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.podtv:hover {
+    background: rgb(91, 91, 227);
+}
+
+/*Auth page*/
+.login_form {
+    background: white;
+    margin: 7.313rem auto auto auto;
+    min-height: 25.938rem;
+    width: 28rem;
+    border-radius: 8px;
+}
+
+.signin_title_block {
+    align-content: center;
+    text-align: center;
+}
+
+.login_title {
+    margin-top: 1.875rem;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.login_box {
+    display: flex;
+    border: 1px #0000004D solid;
+    border-radius: 8px;
+}
+
+.login_icon {
+    align-content: center;
+    background: #F5F6F7;
+    border-radius: 8px 0 0 8px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.login_input {
+    height: 40px;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    padding-left: 0;
+}
+
+.podheader {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 14px;
+}
+
+.ots {
+    margin-top: 1.875rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 12px;
+}
+
+.ots_login_text {
+    margin-bottom: 0.625rem;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.ots_parol {
+    margin-top: 1rem;
+    margin-bottom: 0.625rem;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.Error {
+    margin-top: 0.25rem;
+    font-size: 12px;
+}
+
+.forget {
+    margin-left: 17.188rem;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 0.625rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.3rem;
+}
+
+.Vhod {
+    align-content: center;
+    text-align: center;
+    padding: 1rem 5.325rem 1rem 5.325rem;
+    background: #0C4533;
+    color: white;
+    border-radius: 5px;
+}
+
+.recovery_text {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 0.725rem;
+    padding-bottom: 1.6rem;
+}
+
+.reg {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.reg-a {
+    color: black;
+    text-decoration: underline;
+}
+
+.dir {
+    display: flex;
+}
+
+.register {
+    height: 38rem;
+}
+
+.m-login {
+    margin-top: 1rem;
+    margin-bottom: 0.625rem;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.m-top-2_5rem {
+    margin-top: 2.5rem;
+}
+
+.m-bottom-2_5rem {
+    margin-bottom: 2.5rem;
+}
+
+.fam {
+    margin-left: 2rem;
+}
+
+.signup_password {
+
+}
+
+/*Edit page*/
+
+.edit_box {
+    margin: 2.5rem auto auto auto;
+    width: 50rem;
+    height: 55.5rem;
+    background: white;
+    border-radius: 8px;
+}
+
+.edit_title {
+    background: #0C4533;
+    color: white;
+    text-align: center;
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.redact {
+    max-width: 42rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+.dropdown {
+    width: 15rem;
+    /*height: 2.5rem;*/
+    max-height: 10rem;
+    border-radius: 8px;
+    background: #F5F6F7;
+    align-content: center;
+    font-size: 14px;
+    margin-bottom: 0.75rem;
+    margin-top: 0.3rem;
+    border: 1px #0000004D solid;
+}
+
+.dropdown-toggle {
+    font-weight: 300;
+    color: #00000080;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    padding-left: .75rem;
+}
+
+.dropdown-options {
+
+}
+
+.dropdown-option {
+    display: flex;
+    padding-left: .75rem;
+    padding-bottom: .75rem;
+    font-weight: 400;
+    align-items: center;
+}
+
+.dropdown-option-icon {
+    margin-right: 0.313rem;
+    align-content: center;
+    width: 10px;
+    height: 10px;
+    background: #000000B2;
+    border-radius: 1px;
+}
+
+.three {
+
+}
+
+.file-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 1px dashed #ccc;
+    cursor: pointer;
+}
+
+.file-input-wrapper svg {
+    margin-right: 5px;
+}
+
+.file-input-wrapper span {
+    font-size: 12px;
+}
+
+.image-upload {
+    display: none;
+}
+
+.Knopki {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.Cancel {
+    width: 10rem;
+    background: #830909;
+    border: none;
+    color: white;
+}
+
+.Send {
+    width: 10rem;
+    border: none;
+    color: white;
+    background: #0C4533;
+}
+
+/*Kod page*/
+
+.kod {
+    max-width: 100vw;
+    height: 100vh;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F5F6F7;
+    font-family: 'Roboto', sans-serif;
+}
+
+.window_kod {
+    padding: 30px;
+    border-radius: 8px;
+    background: #FFFFFF;
+}
+
+.header_kod {
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.podheader_kod {
+    color: #000000B2;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.koddos_kod {
+    font-weight: 500;
+}
+
+.podtv_kod {
+    padding: 16px 0;
+    width: 100%;
+    background: #0C4533;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.podtv_kod:hover {
+    background: rgb(91, 91, 227);
+}
